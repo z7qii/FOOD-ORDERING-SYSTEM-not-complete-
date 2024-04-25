@@ -1,0 +1,64 @@
+POST http://localhost:8010/resturantOwner/register
+content-Type: application/json
+
+{
+    "email":"zayed@gmail.com",
+    "password":"uvhrkh12",
+    "name":"zayed yasir",
+    "phoneNumber":"011 2805 9842"
+}
+
+###
+POST http://localhost:8010/auth/login
+content-Type: application/json
+
+{
+    "email":"zayed@gmail.com",
+    "password":"uvhrkh12"
+}
+
+###
+POST http://localhost:8010/resturantOwner/addResturant
+content-Type: application/json
+
+{
+    "ownerEmail":"zayed@gmail.com",
+    "resturantName":"shamana",
+    "shortDescription" : "arab food",
+    "longDescription":"we serve the best arab food around the world. if you didnt try iraqi food then you didnt try arab food",
+    "backgroundImg":"shamana.png",
+    "resturantImg":"hey",
+    "minOrder":"60RM",
+    "deliveryTime":"30min",
+    "openTime":"11am-9pm",
+    "location":"cyberjaya"
+}
+###
+put http://localhost:8010/resturantOwner/addItem
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIwZTA4MmE4YTk3NmY0NDlhZjgxNCIsImlhdCI6MTY5NjI4MzYxM30.c99PaYOrzQO7zjC-xYE2S9n0m83fuBAsHmCyib6WuhY
+content-Type: application/json
+
+{
+    "id":"651b291b14467c45e7bf6932",
+    "sectionName":"bread",
+    "name":"radb",
+    "price":"50",
+    "img":"mandy.png"
+}
+
+###
+put http://localhost:8010/resturantOwner/addSection/sweet
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIwZTA4MmE4YTk3NmY0NDlhZjgxNCIsImlhdCI6MTY5NjI4MzYxM30.c99PaYOrzQO7zjC-xYE2S9n0m83fuBAsHmCyib6WuhY
+
+
+###
+DELETE http://localhost:8010/resturantOwner/deleteSection/sweat
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIwZTA4MmE4YTk3NmY0NDlhZjgxNCIsImlhdCI6MTY5NjI4MzYxM30.c99PaYOrzQO7zjC-xYE2S9n0m83fuBAsHmCyib6WuhY
+
+###
+GET http://localhost:8010/resturantOwner/getMenu
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIwZTA4MmE4YTk3NmY0NDlhZjgxNCIsImlhdCI6MTY5NjI4MzYxM30.c99PaYOrzQO7zjC-xYE2S9n0m83fuBAsHmCyib6WuhY
+
+###
+GET http://localhost:8010/resturantOwner/getResturant
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MWIwZTA4MmE4YTk3NmY0NDlhZjgxNCIsImlhdCI6MTY5NjI4MzYxM30.c99PaYOrzQO7zjC-xYE2S9n0m83fuBAsHmCyib6WuhY

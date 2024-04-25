@@ -1,0 +1,9 @@
+.homePage_container {
+}
+
+.main_container {
+  margin: 0 auto;
+  width: 80%;
+  box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.3),
+    5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+}

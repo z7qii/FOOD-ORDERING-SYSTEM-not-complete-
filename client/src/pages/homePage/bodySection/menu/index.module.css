@@ -1,0 +1,210 @@
+.sections_container {
+  display: flex;
+  gap: 10px;
+  padding: 13px 35px;
+  gap: 50px;
+  align-items: center;
+  box-shadow: 1px 1px 6px -4px #000;
+  overflow-x: auto;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  color: #212529;
+  font-family: system-ui;
+}
+
+.searchBar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 1px 1px 6px -4px #000;
+}
+.searchBar {
+  display: flex;
+  gap: 5px;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 1px 1px 6px -4px #000;
+}
+
+.searchBar img {
+  height: 20px;
+}
+
+.searchBar input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.addSection_container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 6px -4px #000;
+}
+
+.addSection_container button {
+  padding: 5px;
+  background-color: whitesmoke;
+  color: black;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.addSection_container input {
+  border: 0;
+  outline: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.section_container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  perspective: 1000px; /* Gives a 3D-space perspective */
+}
+
+.section_title {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #f44336;
+  height: 45px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: system-ui;
+  color: #fff;
+  border-top-right-radius: 10px;
+}
+
+.food_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  perspective: 1000px;
+}
+
+@media (max-width: 1010px) {
+  /* Adjust breakpoint as necessary */
+  .food_container {
+    grid-template-columns: 1fr; /* 1 column on smaller screens */
+  }
+}
+
+@media (max-width: 595px) {
+  /* Adjust breakpoint as necessary */
+  .food_container {
+    grid-template-columns: minmax(0, 1fr); /* 1 column on smaller screens */
+  }
+}
+.addMeal_container {
+  display: flex;
+  gap: 15px;
+  box-shadow: 1px 1px 6px -4px #000;
+  width: 400px;
+  height: 120px;
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.addPicture_container {
+  display: flex;
+  align-items: center;
+}
+
+.addMeal_container {
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px -4px #000;
+  cursor: pointer;
+  /* transition: transform 0.3s ease;
+  transform: translateZ(0); Starts at 0 distance from the viewer */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 190px;
+}
+
+/* .addMeal_container:hover {
+  transform: translateZ(50px); /* Moves towards the viewer by 50 pixels */
+
+/* Assuming these styles are defined within the same module as .addMeal_container */
+.addPicture_container {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center; /* Center the file input */
+  background-color: #f0f0f0; /* Light background for contrast */
+  border-bottom: 1px solid #ddd; /* Separation from the next section */
+  width: 227px;
+}
+
+.addPicture_container input[type="file"] {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input_container {
+  padding: 3px;
+}
+
+.input_container input,
+.input_container button {
+  width: 100%; /* Full width for mobile-friendly design */
+  padding: 10px 15px;
+  margin-top: 10px; /* Spacing between each input/button */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+}
+
+.input_container button {
+  background-color: #f44336; /* A green color */
+  color: white; /* Text color */
+  font-size: 16px;
+  cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+}
+
+.sectionTitle_container {
+  display: flex;
+  gap: 7px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 6px -4px #000;
+  padding: 10px;
+}
+
+.trashIcon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
